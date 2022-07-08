@@ -1,15 +1,16 @@
-# Practice(연습)
+# Function(기능 구현, API 사용)
 
-#### Practice Repositories는 Android View들의 기본사용법을 연습한 공간입니다.
+#### Function Repositories는 Android의 기능을 구현하고, API 사용법 등을 연습하는 공간입니다.
 
-## [Layout 연습](https://github.com/JDroid-git/practice/tree/main/layoutEx) - [Blog](https://jdroid.tistory.com/8)
 
-### - LinearLayout, RelativeLayout, ConstraintLayout, TableLayout, GridLayout, FrameLayout, TabLayout, CoordinatorLayout, AppBarLayout, DrawerLayout 사용 연습
+> ### [KakaoLoginEx](https://github.com/JDroid-git/function/tree/main/KakaoLoginEx) - [Blog](https://jdroid.tistory.com/10?)
 
-## [TextView 연습](https://github.com/JDroid-git/practice/tree/main/textViewEx) - [Blog - XML](https://jdroid.tistory.com/3), [Blog - Programmatically](https://jdroid.tistory.com/4)
+#### * Kakao SDK를 이용하여 카카오톡 로그인 기능을 구현하였습니다.
 
-### - TextView의 속성들을 연습
+> ### [GlideEx](https://github.com/JDroid-git/function/tree/main/GlideEx) - [Blog](https://jdroid.tistory.com/18)
 
-## [RecyclerView 연습](https://github.com/JDroid-git/practice/tree/main/recyclerviewaddremove) - [Blog](https://jdroid.tistory.com/17)
+#### * Glide API를 이용하여 ImageView에 Blog에 있는 Image를 넣어보았습니다.
 
-### - RecyclerView를 이용하여 내용을 추가, 삭제
+> ### [SplashEx](https://github.com/JDroid-git/function/tree/main/splashEx)
+
+#### * Android 12 부터 변화된 Splash 기능을 구현하였습니다.
