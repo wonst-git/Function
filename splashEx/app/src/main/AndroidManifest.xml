@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SplashEx">
         <activity
-            android:name=".SplashActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
