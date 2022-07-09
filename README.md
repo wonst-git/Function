@@ -11,6 +11,6 @@
 
 #### * Glide API를 이용하여 ImageView에 Blog에 있는 Image를 넣어보았습니다.
 
-> ### [SplashEx](https://github.com/JDroid-git/function/tree/main/splashEx)
+> ### [SplashEx](https://github.com/JDroid-git/function/tree/main/splashEx) - [Blog](https://jdroid.tistory.com/19)
 
 #### * Android 12 부터 변화된 Splash 기능을 구현하였습니다.
