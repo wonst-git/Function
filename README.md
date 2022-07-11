@@ -14,3 +14,7 @@
 > ### [SplashEx](https://github.com/JDroid-git/function/tree/main/splashEx) - [Blog](https://jdroid.tistory.com/19)
 
 #### * Android 12 부터 변화된 Splash 기능을 구현하였습니다.
+
+> ### [FingerprintEx](https://github.com/JDroid-git/function/tree/main/FingerprintEx) - [Blog](https://jdroid.tistory.com/22)
+
+#### * Android의 생체 인증을 간단하게 구현해보았습니다.
