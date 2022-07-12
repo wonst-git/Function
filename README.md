@@ -18,3 +18,7 @@
 > ### [FingerprintEx](https://github.com/JDroid-git/function/tree/main/FingerprintEx) - [Blog](https://jdroid.tistory.com/22)
 
 #### * Android의 생체 인증을 간단하게 구현해보았습니다.
+
+> ### [FingerprintEx](https://github.com/JDroid-git/function/tree/main/ContactsEx) - 작업중
+
+#### * Android의 연락처 쓰기, 읽기 권한을 획득하고 연락처 읽기, 수정, 삭제 기능을 구현하였습니다.
