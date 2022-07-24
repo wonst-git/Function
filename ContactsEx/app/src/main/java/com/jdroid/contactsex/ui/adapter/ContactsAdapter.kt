@@ -9,9 +9,8 @@ import com.jdroid.contactsex.data.ContactsData
 import com.jdroid.contactsex.databinding.ViewContactsListBinding
 import java.util.*
 
-class ContactsAdapter(private val contactsList: ArrayList<ContactsData>, private val onItemClickListener: OnItemClickListener, private val checkedList: MutableSet<Int>) : RecyclerView
-.Adapter<ContactsAdapter
-.ViewHolder>() {
+class ContactsAdapter(private val contactsList: ArrayList<ContactsData>, private val onItemClickListener: OnItemClickListener, private val checkedList: MutableSet<Int>)
+    : RecyclerView.Adapter<ContactsAdapter.ViewHolder>() {
 
     interface OnItemClickListener {
         fun onItemClickListener(position: Int)
@@ -41,7 +40,7 @@ class ContactsAdapter(private val contactsList: ArrayList<ContactsData>, private
             binding.checkbox.isVisible = isDeleteMode
 
             if (isDeleteMode) {
-                binding.checkbox.isChecked = checkedList.filter { adapterPosition == it }.isNotEmpty()
+                binding.checkbox.isChecked = checkedList.any { adapterPosition == it }
             } else {
                 checkedList.clear()
                 binding.checkbox.isChecked = false
@@ -71,6 +70,5 @@ class ContactsAdapter(private val contactsList: ArrayList<ContactsData>, private
                 return@setOnLongClickListener false
             }
         }
-
     }
 }

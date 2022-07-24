@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jdroid.contactsex">
 
-    <uses-permission-sdk-23 android:name="android.permission.READ_CONTACTS" />
-    <uses-permission-sdk-23 android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
     <application
         android:allowBackup="true"

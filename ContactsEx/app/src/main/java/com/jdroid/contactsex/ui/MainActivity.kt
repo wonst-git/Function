@@ -2,7 +2,6 @@ package com.jdroid.contactsex.ui
 
 import android.Manifest
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
@@ -26,7 +25,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     private var contactsList = ArrayList<ContactsData>()
     private var checkedList: MutableSet<Int> = mutableSetOf()
-    private var preferences: SharedPreferences? = null
     private var isDeleteMode = false
     private var contactsAdapter: ContactsAdapter? = null
 
@@ -50,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             onCheckContactsPermission()
         } else {
             if (shouldShowRequestPermissionRationale(permissions[0])) {
-                Toast.makeText(this, "shouldshow", Toast.LENGTH_SHORT).show()
+                binding.txtDescription.text = "권한이 거절되었습니다."
             } else {
                 AlertDialog.Builder(this).apply {
                     setTitle("권한")
@@ -85,9 +83,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.btnAddContacts -> {
                 startActivity(Intent(this, ContactsAddEditActivity::class.java))
             }
+
             binding.btnPermission -> {
                 requestPermission()
             }
+
             binding.includeTitle.btnDelete -> {
                 checkedList.sortedDescending().forEach {
                     setDeleteContacts(contactsList[it], it)
@@ -101,8 +101,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        preferences = getSharedPreferences("contacts", MODE_PRIVATE)
 
         initLayout()
         initListener()
