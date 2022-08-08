@@ -69,15 +69,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    override fun onBackPressed() {
-        if (isDeleteMode) {
-            isDeleteMode = false
-            setModeUI()
-        } else {
-            super.onBackPressed()
-        }
-    }
-
     override fun onClick(v: View?) {
         when (v) {
             binding.btnAddContacts -> {
@@ -96,6 +87,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 isDeleteMode = false
                 setModeUI()
             }
+        }
+    }
+
+    override fun onBackPressed() {
+        if (isDeleteMode) {
+            isDeleteMode = false
+            setModeUI()
+        } else {
+            super.onBackPressed()
         }
     }
 

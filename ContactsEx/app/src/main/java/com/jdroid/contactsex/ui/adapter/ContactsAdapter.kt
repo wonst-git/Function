@@ -47,11 +47,6 @@ class ContactsAdapter(private val contactsList: ArrayList<ContactsData>, private
                 longPosition = -1
             }
 
-            if (longPosition == adapterPosition) {
-                binding.checkbox.isChecked = true
-                checkedList.add(adapterPosition)
-            }
-
             itemView.setOnClickListener {
                 if (isDeleteMode) {
                     binding.checkbox.performClick()
